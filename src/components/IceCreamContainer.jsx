@@ -3,7 +3,7 @@ import {useDispatch,useSelector} from 'react-redux'
 import {buyIceCream} from '../redux'
 
 
-export const IceCreamContainer = () => {
+const IceCreamContainer = () => {
     const numberOfIceCreams=useSelector(state=>state.iceCream.numberOfIceCreams)
     const dispatch=useDispatch()
 
@@ -15,3 +15,5 @@ export const IceCreamContainer = () => {
         </div>
     )
 }
+
+export default IceCreamContainer
